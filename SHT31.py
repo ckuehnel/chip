@@ -5,6 +5,7 @@
 # SHT31
 # This code is designed to work with the SHT31_I2CS I2C Mini Module available from ControlEverything.com.
 # https://www.controleverything.com/content/Humidity?sku=SHT31_I2CS#tabs-0-product_tabset-2
+# Minor modifications: 2017-02-05 by Claus Kuehnel info@ckuehnel.ch
 
 import smbus
 import time
