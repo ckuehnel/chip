@@ -16,7 +16,7 @@ weather = parsed_json['current_observation']['weather']
 station = parsed_json['current_observation']['station_id']
 updated = parsed_json['current_observation']['observation_time_rfc822']
 print("Current temperature in %s is: %s *C" % (location, temp_c))
-print("Current relative humidity is: %s %%" % (rel_hum))
+print("Current relative humidity is: %s " % (rel_hum))
 print("Weather is %s " % (weather))
 print("Weather station is %s" % (station))
 print("Last updated: %s" % (updated))
@@ -28,5 +28,5 @@ f.write(str(temp_c))
 f.close()
 
 f = open("HUMI","w")
-f.write(str(rel_hum))
+f.write(str(rel_hum)[:-1])
 f.close() 
