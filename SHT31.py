@@ -36,10 +36,10 @@ print "Temperature in Celsius is : %.2f C" %cTemp
 #print "Temperature in Fahrenheit is : %.2f F" %fTemp
 print "Relative Humidity is : %.2f %%RH" %humidity
 
-f = open("TEMP","w")
+f = open("/home/TEMP","w")
 f.write(str(cTemp))
 f.close()
 
-f = open("HUMI","w")
+f = open("/home/HUMI","w")
 f.write(str(humidity))
 f.close() 
