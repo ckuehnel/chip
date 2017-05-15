@@ -29,4 +29,4 @@ reg=$(i2cget -f -y 0 0x34 0x5E w)
 
 echo -n "PMU Temperature = "
 echo "$reg"  | sed s/0x// | tr '[:lower:]' '[:upper:]' |  awk  '{print "obase=10;ibase=16; value=" $reg "; hi=value/100; low=(value%100); scale=1; r=((low*10+hi) -5A7)/A; print r" }' | bc
-echo " °C"
+echo " C"
